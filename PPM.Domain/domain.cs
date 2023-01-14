@@ -404,8 +404,6 @@ namespace DOMAIN
             {
                 if (employeeList[i].employeeID == employeeId)
                 {
-                    ProjectManagement projectManagement = new ProjectManagement();
-                    projectManagement.DeleteEmployeeFromProject(employeeId,employee);
                     employeeList.Remove(employee);
                 }
             }

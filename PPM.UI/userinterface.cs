@@ -676,19 +676,26 @@ namespace UserInterface
                                         {
                                             if (obj1.employeeList[i].employeeID == idForDeleting)
                                             {
+                                                for(int j =0;j<obj.projects.Count;j++)
+                                                {
+                                                    if(obj.projects.Count != 0 && obj.projects[j].EmployeeListfromEmployeeManagement.Count != 0)
+                                                    {
+                                                        for (int k = 0; k < obj.projects[j].EmployeeListfromEmployeeManagement.Count; k++)
+                                                        {
+                                                            if (obj.projects[j].EmployeeListfromEmployeeManagement[k].employeeID == idForDeleting)
+                                                            {
+                                                                obj.projects[j].EmployeeListfromEmployeeManagement.Remove(obj.projects[j].EmployeeListfromEmployeeManagement[k]);
+                                                            }
+                                                        }
+                                                    }
+                                                }
                                                 obj1.DeleteEmployee(idForDeleting, obj1.employeeList[i]);
-                                                Console.WriteLine("");
-                                                Console.WriteLine("Deleted Successfully !");
-                                                Console.WriteLine("Enter any key to get to main menu");
-                                                Console.ReadLine();
-                                            }
-                                            else
-                                            {
-                                                Console.WriteLine("No employee found");
-                                                Console.WriteLine("Enter any key to get to main menu");
-                                                Console.ReadLine();
+                                                Console.WriteLine("Successfully deleted");
                                             }
                                         }
+                                        Console.WriteLine("Enter any key to get to main menu");
+                                        Console.ReadLine();
+                                        break;
                                     }
                                     catch (FormatException e)
                                     {
