@@ -256,6 +256,25 @@ namespace DOMAIN
             return false;
         }
 
+        public Boolean IfExistInEmployee(int empid,int pid)
+        {
+            for (int i = 0; i < projects.Count; i++)
+            {
+                if(pid == projects[i].id)
+                {
+                    for (int j = 0; j < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
+                    {
+                        if (empid == projects[i].EmployeeListfromEmployeeManagement[j].employeeID)
+                        {
+                            return true;
+                        }
+                    }
+                }
+            }
+            return false;
+        }
+
+
 
         //Method to View all projects
         public void ShowProject(int eid)

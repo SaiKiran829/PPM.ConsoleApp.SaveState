@@ -277,7 +277,7 @@ namespace UserInterface
                                             {
                                                 Employee employeeSelect = new Employee();
                                                 employeeSelect = obj1.EmployeeDetails(employeeIdSelecting);
-                                                if (!obj.IfExistInEmployee(employeeIdSelecting))
+                                                if (!obj.IfExistInEmployee(employeeIdSelecting,PROJId))
                                                 {
                                                     obj.AddingEmployeeToProject(PROJId, employeeSelect);
                                                     Console.WriteLine("Added Successfully!!!!!!!");
