@@ -194,9 +194,21 @@ namespace DOMAIN
         {
             for (int i = 0; i < projects.Count; i++)
             {
-                if (projects[i].id == pid)
+                for(int j = 0; j < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
                 {
-                    projects[i].EmployeeListfromEmployeeManagement.Remove(ename);
+                    if (projects[i].id == pid)
+                    {
+                        if (projects[i].EmployeeListfromEmployeeManagement.Count != 0)
+                        {
+                            projects[i].EmployeeListfromEmployeeManagement.Remove(ename);
+                            Console.WriteLine("Deleted Succesfully");
+                        }
+                        else
+                        {
+                            Console.WriteLine("No employee found in the project to delete");
+                        }
+                            
+                    }
                 }
             }
         }

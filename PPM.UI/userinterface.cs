@@ -315,10 +315,15 @@ namespace UserInterface
                                         {
                                             Console.WriteLine("Enter the id of employee to delete from project");
                                             int EmpId1 = Convert.ToInt32(Console.ReadLine());
-                                            employee = obj1.EmployeeDetails(EmpId1);
-                                            obj.EmployeeFromProject(PROJId1, employee);
-                                            Console.WriteLine("\nSuccessfully deleted");
-
+                                            if(obj.IfExistInEmployee(EmpId1))
+                                            {
+                                                employee = obj1.EmployeeDetails(EmpId1);
+                                                obj.EmployeeFromProject(PROJId1, employee);
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine("No employee present in this project with that id");
+                                            }
                                         }
                                         else
                                         {
