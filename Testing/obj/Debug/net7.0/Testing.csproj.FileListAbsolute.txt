@@ -327,6 +327,11 @@ C:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-mast
 c:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-master\Prolifics-Project-Management-Console-App_final-master\Testing\obj\Debug\net7.0\Testing.genruntimeconfig.cache
 c:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-master\Prolifics-Project-Management-Console-App_final-master\Testing\obj\Debug\net7.0\ref\Testing.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\CoverletSourceRootsMapping
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.csproj.AssemblyReference.cache
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.AssemblyInfoInputs.cache
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.AssemblyInfo.cs
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.csproj.CoreCompileInputs.cache
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\testhost.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\PPM.Main.deps.json
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\PPM.Main.runtimeconfig.json
@@ -477,11 +482,6 @@ D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bi
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\PPM.Main.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\PPM.Model.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\bin\Debug\net7.0\PPM.UI.pdb
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.csproj.AssemblyReference.cache
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.GeneratedMSBuildEditorConfig.editorconfig
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.AssemblyInfoInputs.cache
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.AssemblyInfo.cs
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.csproj.CoreCompileInputs.cache
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.csproj.CopyComplete
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\Testing.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\Testing\obj\Debug\net7.0\refint\Testing.dll

@@ -67,10 +67,17 @@ namespace DOMAIN
             List<Employee> employee = SearchForEmployee(readingProjectId);
             if(employee != null)
             {
-                for(int i =0;i<employee.Count;i++)
+                for(int j = 0; j < projects.Count; j++)
                 {
-                        Console.WriteLine("=====================================================================================");
-                        Console.WriteLine("Below are the details of employees in this project");
+                    if (projects[j].id == readingProjectId)
+                    {
+                        Console.WriteLine("Name of the project - " + projects[j].projectName);
+                    }
+                }
+                Console.WriteLine("=====================================================================================");
+                Console.WriteLine("Below are the details of employees in this project");
+                for (int i =0;i<employee.Count;i++)
+                {
                         Console.WriteLine("-------------------------------------------------------------------------------------");
                         Console.WriteLine(employee[i].employeefirstName + " [" + employee[i].roleName + "]");
                     
@@ -201,7 +208,6 @@ namespace DOMAIN
                         if (projects[i].EmployeeListfromEmployeeManagement.Count != 0)
                         {
                             projects[i].EmployeeListfromEmployeeManagement.Remove(ename);
-                            Console.WriteLine("Deleted Succesfully");
                         }
                         else
                         {

@@ -118,6 +118,11 @@ c:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-mast
 c:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-master\Prolifics-Project-Management-Console-App_final-master\PPM.UI\obj\Debug\net7.0\refint\PPM.UI.dll
 c:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-master\Prolifics-Project-Management-Console-App_final-master\PPM.UI\obj\Debug\net7.0\PPM.UI.pdb
 c:\Users\SPasapula\Downloads\Prolifics-Project-Management-Console-App_final-master\Prolifics-Project-Management-Console-App_final-master\PPM.UI\obj\Debug\net7.0\ref\PPM.UI.dll
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.csproj.AssemblyReference.cache
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.AssemblyInfoInputs.cache
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.AssemblyInfo.cs
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.csproj.CoreCompileInputs.cache
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\NUnit3.TestAdapter.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\NUnit3.TestAdapter.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\nunit.engine.dll
@@ -131,11 +136,6 @@ D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Model.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Domain.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Model.pdb
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.csproj.AssemblyReference.cache
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.GeneratedMSBuildEditorConfig.editorconfig
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.AssemblyInfoInputs.cache
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.AssemblyInfo.cs
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.csproj.CoreCompileInputs.cache
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.csproj.CopyComplete
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\refint\PPM.UI.dll

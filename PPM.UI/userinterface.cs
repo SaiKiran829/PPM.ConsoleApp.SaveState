@@ -110,6 +110,7 @@ namespace UserInterface
                                         try
                                         {
                                         inputprojectid:
+                                            error = false;
                                             Console.WriteLine("Enter Project Id");
                                             int projectid = Convert.ToInt32(Console.ReadLine());
                                             for (int i = 0; i < obj.projects.Count; i++)
@@ -130,7 +131,7 @@ namespace UserInterface
                                                     }
                                                 }
                                             }
-                                            Console.WriteLine("Enter the name of project");
+                                                Console.WriteLine("Enter the name of project");
                                             string name = Console.ReadLine();
                                         StartDate:
                                             Console.WriteLine("Enter start date of project in DD/MM/YYYY format");
@@ -151,6 +152,7 @@ namespace UserInterface
                                                 }
 
                                             }
+                                            
                                         EndDate:
                                             Console.WriteLine("Enter end date of project in DD/MM/YYYY format");
                                             string end = Console.ReadLine();
@@ -319,6 +321,7 @@ namespace UserInterface
                                             {
                                                 employee = obj1.EmployeeDetails(EmpId1);
                                                 obj.EmployeeFromProject(PROJId1, employee);
+                                                Console.WriteLine("Deleted Succesfully");
                                             }
                                             else
                                             {
@@ -339,14 +342,28 @@ namespace UserInterface
                                     break;
 
                                 case "7":
-                                    Console.WriteLine("Enter the id of the project");
-                                    int readForId = Convert.ToInt32(Console.ReadLine());
-                                    if(obj.IfExist(readForId)){
-                                    obj.DisplayEmployeesInProjectById(readForId);
-                                    Console.WriteLine("-------------------------------------------------------------------------------------");
+                                    try
+                                    {
+
+                                        Console.WriteLine("Enter the id of the project");
+                                        int readForId = Convert.ToInt32(Console.ReadLine());
+                                        if (obj.IfExist(readForId))
+                                        {
+                                            obj.DisplayEmployeesInProjectById(readForId);
+                                            Console.WriteLine("-------------------------------------------------------------------------------------");
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine("No project present with that id");
+                                        }
                                     }
-                                    else{
-                                        Console.WriteLine("No project present with that id");
+                                    catch(FormatException e)
+                                    {
+                                        Console.WriteLine("Id can only be a number");
+                                    }
+                                    catch(Exception e)
+                                    {
+                                        Console.WriteLine("Id can only be a number");
                                     }
                                     Console.WriteLine("Enter any key to get to main menu");
                                     Console.ReadLine();
@@ -354,23 +371,44 @@ namespace UserInterface
 
 
                                 case "8":
-                                    Console.WriteLine("Enter the Id of the project to delete");
-                                    int idforDeleting = Convert.ToInt32(Console.ReadLine());
-                                    for (int i = 0; i < obj.projects.Count; i++)
+                                    try
                                     {
-                                        for (int j = 0; j < obj.projects[i].EmployeeListfromEmployeeManagement.Count; j++) {
-                                            if (obj.projects[i].id == idforDeleting)
+                                        Console.WriteLine("Enter the Id of the project to delete");
+                                        int idforDeleting = Convert.ToInt32(Console.ReadLine());
+                                        if(obj.IfExist(idforDeleting))
+                                        {
+                                            for (int i = 0; i < obj.projects.Count; i++)
                                             {
-                                                obj.EmployeeFromProject(idforDeleting, obj.projects[i].EmployeeListfromEmployeeManagement[j]);
+                                                for (int j = 0; j < obj.projects[i].EmployeeListfromEmployeeManagement.Count; j++)
+                                                {
+                                                    if (obj.projects[i].id == idforDeleting)
+                                                    {
+                                                        obj.EmployeeFromProject(idforDeleting, obj.projects[i].EmployeeListfromEmployeeManagement[j]);
+                                                    }
+                                                }
+                                                if (obj.projects[i].id == idforDeleting)
+                                                {
+                                                    obj.DeleteProject(idforDeleting, obj.projects[i]);
+                                                    Console.WriteLine("");
+                                                    Console.WriteLine("Deleted Successfully !");
+                                                }
                                             }
                                         }
-                                        if (obj.projects[i].id == idforDeleting)
+                                        else
                                         {
-                                            obj.DeleteProject(idforDeleting, obj.projects[i]);
+                                            Console.WriteLine("No project exists with that id");
                                         }
+                                        
+                                        
                                     }
-                                    Console.WriteLine("");
-                                    Console.WriteLine("Deleted Successfully !");
+                                    catch (FormatException e)
+                                    {
+                                        Console.WriteLine("Id can only be a number");
+                                    }
+                                    catch (Exception e)
+                                    {
+                                        Console.WriteLine("Id can only be a number");
+                                    }
                                     Console.WriteLine("Enter any key to get to main menu");
                                     Console.ReadLine();
                                     break;
