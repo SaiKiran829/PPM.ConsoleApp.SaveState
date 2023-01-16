@@ -60,7 +60,22 @@ namespace DOMAIN
             }
             return null;
         }
-        
+
+        public void displayallprojects()
+        {
+            for(int i = 0; i < projects.Count; i++)
+            {
+                Console.WriteLine("Name of the project - " + projects[i].projectName);
+                Console.WriteLine("=====================================================================================");
+                Console.WriteLine("Below are the details of employees in this project");
+                for (int j = 0; j < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
+                {
+                    Console.WriteLine("-------------------------------------------------------------------------------------");
+                    Console.WriteLine(projects[i].EmployeeListfromEmployeeManagement[j].employeefirstName + " [" + projects[i].EmployeeListfromEmployeeManagement[j].roleName + "]");
+                    Console.WriteLine("-------------------------------------------------------------------------------------");
+                }
+            }
+        }
 
         public void DisplayEmployeesInProjectById(int readingProjectId)
         {

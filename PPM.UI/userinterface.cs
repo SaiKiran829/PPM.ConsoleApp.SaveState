@@ -412,7 +412,11 @@ namespace UserInterface
                                     Console.WriteLine("Enter any key to get to main menu");
                                     Console.ReadLine();
                                     break;
-
+                                case "9":
+                                    obj.displayallprojects();
+                                    Console.WriteLine("Enter any key to get to main menu");
+                                    Console.ReadLine();
+                                    break;
                                 case "x":
                                     goto View;
                                     break;
