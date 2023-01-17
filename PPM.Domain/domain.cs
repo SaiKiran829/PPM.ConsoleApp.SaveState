@@ -460,6 +460,18 @@ namespace DOMAIN
                 }
             }
         }
+
+        public Boolean IfExistsByRole(int roleId)
+        {
+            for(int i =0;i< employeeList.Count; i++)
+            {
+                if (employeeList[i].roleId == roleId)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
     }
 
     //Class which consists of methods for adding and viewing roles
@@ -467,7 +479,6 @@ namespace DOMAIN
     {
         private static readonly List<Role> roles = new();
         public List<Role> roleList = roles;
-
 
 
         //Method for adding roles
@@ -527,13 +538,15 @@ namespace DOMAIN
 
         public void DeleteRole(int roleId)
         {
-            for (int i = 0; i < roleList.Count; i++)
-            {
-                if (roleList[i].roleId == roleId)
+                for (int i = 0; i < roleList.Count; i++)
                 {
-                    roleList.RemoveAt(i);
+                    if (roleList[i].roleId == roleId)
+                    {
+                        roleList.RemoveAt(i);
+                    }
                 }
-            }
+            
+            
         }
 
         public Boolean IfExists(int roleId)

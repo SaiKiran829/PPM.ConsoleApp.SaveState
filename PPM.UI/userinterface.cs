@@ -890,8 +890,15 @@ namespace UserInterface
                                         int deleteRoleById = Convert.ToInt32(Console.ReadLine());
                                         if (objmain.IfExists(deleteRoleById))
                                         {
-                                            objmain.DeleteRole(deleteRoleById);
-                                            Console.WriteLine("Successfully deleted !");
+                                            if (obj1.IfExistsByRole(deleteRoleById))
+                                            {
+                                                Console.WriteLine("Looks like a employee consists this role id, kindly delete employee with this role id first");
+                                            }
+                                            else
+                                            {
+                                                objmain.DeleteRole(deleteRoleById);
+                                                Console.WriteLine("Successfully deleted !");
+                                            }
                                         }
                                         else
                                         {
