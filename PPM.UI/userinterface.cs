@@ -601,35 +601,32 @@ namespace UserInterface
                                                 Console.WriteLine("Select Role id from above list to assign role to employee");
                                                 int role1 = Convert.ToInt32(Console.ReadLine());
                                                 string? roleNAME1 = null;
-                                                switch (role1)
+                                                if (objmain.IfExists(role1))
                                                 {
-                                                    case 1:
-                                                        roleNAME1 = "Technical Lead";
-                                                        break;
-                                                    case 2:
-                                                        roleNAME1 = "Software Engineer";
-                                                        break;
-                                                    case 3:
-                                                        roleNAME1 = "Associate Software Engineer";
-                                                        break;
-                                                    case 4:
-                                                        roleNAME1 = "Trainee Software Engineer";
-                                                        break;
-                                                    default:
-                                                        Console.WriteLine("");
-                                                        Console.WriteLine("Invalid Entry !");
-                                                        Console.WriteLine("");
-                                                        Console.WriteLine("Enter any key to try again");
-                                                        Console.WriteLine("Enter \"x\" to get to main menu");
-                                                        string tryemprole = Console.ReadLine();
-                                                        if (tryemprole == "x")
+                                                    for(int i = 0; i < objmain.roleList.Count; i++)
+                                                    {
+                                                        if (objmain.roleList[i].roleId == role1)
                                                         {
-                                                            goto repeat;
+                                                            roleNAME1 = objmain.roleList[i].roleName;
                                                         }
-                                                        else
-                                                        {
-                                                            goto Selectrole;
-                                                        }
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    Console.WriteLine("");
+                                                    Console.WriteLine("Role does not exist");
+                                                    Console.WriteLine("");
+                                                    Console.WriteLine("Enter any key to try again");
+                                                    Console.WriteLine("Enter \"x\" to get to main menu");
+                                                    string tryemprole = Console.ReadLine();
+                                                    if (tryemprole == "x")
+                                                    {
+                                                        goto repeat;
+                                                    }
+                                                    else
+                                                    {
+                                                        goto Selectrole;
+                                                    }
                                                 }
                                                 Employee employee1 = new Employee(empId, fname, lname, EMAIL, mobile, address, role1, roleNAME1);
                                                 obj1.AddEmployee(employee1);
