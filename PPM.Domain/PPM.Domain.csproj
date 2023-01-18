@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\IEntityOperation\IEntityOperation.csproj" />
     <ProjectReference Include="..\PPM.Model\PPM.Model.csproj" />
   </ItemGroup>
 

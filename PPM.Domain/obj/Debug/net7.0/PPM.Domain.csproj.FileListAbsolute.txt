@@ -127,3 +127,5 @@ D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.Domain
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.Domain\obj\Debug\net7.0\refint\PPM.Domain.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.Domain\obj\Debug\net7.0\PPM.Domain.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.Domain\obj\Debug\net7.0\ref\PPM.Domain.dll
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.Domain\bin\Debug\net7.0\IEntityOperation.dll
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.Domain\bin\Debug\net7.0\IEntityOperation.pdb

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "FE85FiiU6vpRm9+PPouwcQurc7NAL4jBT5noDgOXJfI2TUIrMsEr/QTAk3CjGieKFOmgkACeRlfdAh2crYgqEQ==",
+  "success": true,
+  "projectFilePath": "D:\\Downloads\\PPMPROLIFICS\\PPM.ConsoleApp-master\\PPM.ConsoleApp-master\\IEntityOperation\\IEntityOperation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sai Kiran\\.nuget\\packages\\nunit3testadapter\\4.3.1\\nunit3testadapter.4.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}

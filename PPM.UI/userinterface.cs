@@ -277,8 +277,7 @@ namespace UserInterface
                                             int employeeIdSelecting = Convert.ToInt32(Console.ReadLine());
                                             if (obj1.IfExists(employeeIdSelecting))
                                             {
-                                                Employee employeeSelect = new Employee();
-                                                employeeSelect = obj1.EmployeeDetails(employeeIdSelecting);
+                                                Employee employeeSelect =  obj1.EmployeeDetails(employeeIdSelecting);
                                                 if (!obj.IfExistInEmployee(employeeIdSelecting,PROJId))
                                                 {
                                                     obj.AddingEmployeeToProject(PROJId, employeeSelect);

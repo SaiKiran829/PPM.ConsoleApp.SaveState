@@ -1,10 +1,11 @@
 ﻿using MODEL;
+using IEntityOperation;
 using System.Net.Http.Headers;
 
 namespace DOMAIN
 {
     //Class which consists of methods for adding and viewing projects
-    public class ProjectManagement
+    public class ProjectManagement : IEntityOperationProject
     {
         private static readonly List<Project> projects1 = new List<Project>();
         public List<Project> projects = projects1;
@@ -340,7 +341,7 @@ namespace DOMAIN
     }
     
     //Class which consists of methods for adding and viewing Employees 
-    public class EmployeeManagement
+    public class EmployeeManagement : IEntityOperationEmployee
     {
         private static readonly List<Employee> employees = new();
         public List<Employee> employeeList = employees;
@@ -475,7 +476,7 @@ namespace DOMAIN
     }
 
     //Class which consists of methods for adding and viewing roles
-    public class RoleManagement
+    public class RoleManagement : IEntityOperationRole
     {
         private static readonly List<Role> roles = new();
         public List<Role> roleList = roles;

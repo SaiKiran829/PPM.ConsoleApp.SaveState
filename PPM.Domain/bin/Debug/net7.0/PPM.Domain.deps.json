@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "PPM.Domain/1.0.0": {
         "dependencies": {
+          "IEntityOperation": "1.0.0",
           "NUnit3TestAdapter": "4.3.1",
           "PPM.Model": "1.0.0"
         },
@@ -16,6 +17,14 @@
         }
       },
       "NUnit3TestAdapter/4.3.1": {},
+      "IEntityOperation/1.0.0": {
+        "dependencies": {
+          "PPM.Model": "1.0.0"
+        },
+        "runtime": {
+          "IEntityOperation.dll": {}
+        }
+      },
       "PPM.Model/1.0.0": {
         "dependencies": {
           "NUnit3TestAdapter": "4.3.1"
@@ -38,6 +47,11 @@
       "sha512": "sha512-R+bGFtsUpLWywjT1nb3xMmoVa2AIw6ClIGC+XjW9lYE8hwJeos+NdR/mtg4RXbBphmC9epALrnUc6MM7mUG8+Q==",
       "path": "nunit3testadapter/4.3.1",
       "hashPath": "nunit3testadapter.4.3.1.nupkg.sha512"
+    },
+    "IEntityOperation/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "PPM.Model/1.0.0": {
       "type": "project",

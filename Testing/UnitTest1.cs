@@ -97,7 +97,7 @@ namespace Tests
             Assert.True(projectManagement.IfExist(2));
         }
 
-        /*[Test]
+        [Test]
         public void Test7()
         {
             ProjectManagement projectManagement = new ProjectManagement();
@@ -106,10 +106,9 @@ namespace Tests
             EmployeeManagement employeeManagement = new EmployeeManagement();
             Employee employee = new Employee(1, "sai", "kiran", "sai@gmail.com", "9182234756", "Home", 1, "player");
             employeeManagement.AddEmployee(employee);
-            Employee employeeinlist = new Employee();
-            employeeinlist = employeeManagement.EmployeeDetails(1);
+            Employee employeeinlist = employeeManagement.EmployeeDetails(1);
             projectManagement.AddingEmployeeToProject(12, employeeinlist);
             Assert.True(projectManagement.IfExistInEmployee(1));
-        }*/
+        }
     }
   }
