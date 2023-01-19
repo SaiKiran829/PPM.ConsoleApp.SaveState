@@ -1,17 +1,22 @@
 ﻿using System;
+using System.Xml.Serialization;
 
 namespace MODEL
 {
-
     //project class
+
     public class Project :  IComparable<Project>
     {
         public string projectName { get; set; }
         public string startDate { get; set; }
         public string endDate { get; set; }
         public int id { get; set; }
+
+        [XmlArray("AvailableEmployees")]
+        [XmlArrayItem("Employee")]
         public List<Employee> EmployeeListfromEmployeeManagement { get; set; } = new List<Employee>();
 
+        [XmlIgnore]
         public int employeeId;
 
         public Project(string projectname, string startdate, string enddate, int Id)

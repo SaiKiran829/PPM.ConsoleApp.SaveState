@@ -132,14 +132,14 @@ D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.UI.deps.json
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.UI.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.UI.pdb
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\IEntityOperation.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Domain.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Model.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Domain.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\PPM.Model.pdb
+D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\IEntityOperation.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.csproj.CopyComplete
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\refint\PPM.UI.dll
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\PPM.UI.pdb
 D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\obj\Debug\net7.0\ref\PPM.UI.dll
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\IEntityOperation.dll
-D:\Downloads\PPMPROLIFICS\PPM.ConsoleApp-master\PPM.ConsoleApp-master\PPM.UI\bin\Debug\net7.0\IEntityOperation.pdb

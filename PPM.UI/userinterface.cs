@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Diagnostics.Metrics;
 using System.Text.RegularExpressions;
+using System.Xml.Serialization;
+using System.IO;
 using DOMAIN;
 using MODEL;
 
@@ -37,6 +39,8 @@ namespace UserInterface
             Console.WriteLine("");
             Console.Write("                                           Enter \"3\" to view Role Module");
             Console.WriteLine("");
+            Console.WriteLine("");
+            Console.WriteLine("                                           Enter \"4\" to save state");
             Console.WriteLine("");
             Console.WriteLine("                                           Enter \"x\" to exit application");
             Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");
@@ -411,7 +415,7 @@ namespace UserInterface
                                     Console.WriteLine("Enter any key to get to main menu");
                                     Console.ReadLine();
                                     break;
-                                case "9":
+                                case "10":
                                     obj.displayallprojects();
                                     Console.WriteLine("Enter any key to get to main menu");
                                     Console.ReadLine();
@@ -922,7 +926,18 @@ namespace UserInterface
 
                             }
                         }
-                  case "x":
+                    case "4":
+                        var serializerProject = new XmlSerializer(typeof(List<Project>));
+                        var serializerEmployee = new XmlSerializer(typeof(List<Employee>));
+                        var serializerRole = new XmlSerializer(typeof(List<Role>));
+                        using (var writer = new StreamWriter(@"C:\Users\Sai Kiran\Desktop\xml file\Text.txt"))
+                        {
+                            serializerProject.Serialize(writer, obj.projects);
+                            serializerEmployee.Serialize(writer, obj1.employeeList);
+                            serializerRole.Serialize(writer, objmain.roleList);
+                        }
+                        break;
+                    case "x":
                   return;
                 }
                 Console.WriteLine("");
@@ -960,6 +975,8 @@ namespace UserInterface
                 Console.WriteLine("");
                 Console.Write("                                           Enter \"3\" to view Role Module");
                 Console.WriteLine("");
+                Console.WriteLine("");
+                Console.WriteLine("                                           Enter \"4\" to save state");
                 Console.WriteLine("");
                 Console.WriteLine("                                           Enter \"x\" to exit application");
                 Console.WriteLine("------------------------------------------------------------------------------------------------------------------------");

@@ -1,12 +1,15 @@
 ﻿using MODEL;
 using IEntityOperation;
 using System.Net.Http.Headers;
+using System.Xml.Serialization;
 
 namespace DOMAIN
 {
     //Class which consists of methods for adding and viewing projects
     public class ProjectManagement : IEntityOperationProject
     {
+        [XmlArray("AvailableProjects")]
+        [XmlArrayItem("Project")]
         private static readonly List<Project> projects1 = new List<Project>();
         public List<Project> projects = projects1;
         readonly EmployeeManagement obj1 = new EmployeeManagement();
@@ -39,7 +42,7 @@ namespace DOMAIN
 
         public Boolean IfNoEmployeesInProject(int pid)
         {
-            for(int i =0;i< projects.Count;i++)
+            for (int i = 0; i < projects.Count; i++)
             {
                 if (projects[i].id == pid && projects[i].EmployeeListfromEmployeeManagement.Count == 0)
                 {
@@ -51,7 +54,7 @@ namespace DOMAIN
 
         public List<Employee> SearchForEmployee(int readingProjectId)
         {
-            foreach(Project e in projects)
+            foreach (Project e in projects)
             {
                 e.EmployeeListfromEmployeeManagement.Sort();
                 if (!IfNoEmployeesInProject(readingProjectId) && e.id == readingProjectId)
@@ -64,7 +67,7 @@ namespace DOMAIN
 
         public void displayallprojects()
         {
-            for(int i = 0; i < projects.Count; i++)
+            for (int i = 0; i < projects.Count; i++)
             {
                 Console.WriteLine("Name of the project - " + projects[i].projectName);
                 Console.WriteLine("=====================================================================================");
@@ -81,9 +84,9 @@ namespace DOMAIN
         public void DisplayEmployeesInProjectById(int readingProjectId)
         {
             List<Employee> employee = SearchForEmployee(readingProjectId);
-            if(employee != null)
+            if (employee != null)
             {
-                for(int j = 0; j < projects.Count; j++)
+                for (int j = 0; j < projects.Count; j++)
                 {
                     if (projects[j].id == readingProjectId)
                     {
@@ -92,11 +95,11 @@ namespace DOMAIN
                 }
                 Console.WriteLine("=====================================================================================");
                 Console.WriteLine("Below are the details of employees in this project");
-                for (int i =0;i<employee.Count;i++)
+                for (int i = 0; i < employee.Count; i++)
                 {
-                        Console.WriteLine("-------------------------------------------------------------------------------------");
-                        Console.WriteLine(employee[i].employeefirstName + " [" + employee[i].roleName + "]");
-                    
+                    Console.WriteLine("-------------------------------------------------------------------------------------");
+                    Console.WriteLine(employee[i].employeefirstName + " [" + employee[i].roleName + "]");
+
                 }
             }
             else
@@ -144,7 +147,7 @@ namespace DOMAIN
             }
         }
 
-        public Project SearchProject(List<Project> projects ,int first,int last,int pid)
+        public Project SearchProject(List<Project> projects, int first, int last, int pid)
         {
             if (first <= last)
             {
@@ -155,11 +158,11 @@ namespace DOMAIN
                 }
                 else if (projects[midpoint].id > pid)
                 {
-                    return SearchProject(projects, first, midpoint-1, pid);
+                    return SearchProject(projects, first, midpoint - 1, pid);
                 }
                 else if (projects[midpoint].id < pid)
                 {
-                    return SearchProject(projects, midpoint+1, last, pid);
+                    return SearchProject(projects, midpoint + 1, last, pid);
                 }
             }
             return null;
@@ -193,15 +196,15 @@ namespace DOMAIN
             {
                 Console.WriteLine("No project found");
             }*/
-            foreach(Project e in projects)
+            foreach (Project e in projects)
             {
-                if(e.id == pid)
+                if (e.id == pid)
                 {
-                        e.EmployeeListfromEmployeeManagement.Add(ename);
+                    e.EmployeeListfromEmployeeManagement.Add(ename);
                 }
             }
         }
-        
+
         public void DeleteProject(int pid, Project project)
         {
             for (int i = 0; i < projects.Count; i++)
@@ -217,7 +220,7 @@ namespace DOMAIN
         {
             for (int i = 0; i < projects.Count; i++)
             {
-                for(int j = 0; j < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
+                for (int j = 0; j < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
                 {
                     if (projects[i].id == pid)
                     {
@@ -229,7 +232,7 @@ namespace DOMAIN
                         {
                             Console.WriteLine("No employee found in the project to delete");
                         }
-                            
+
                     }
                 }
             }
@@ -239,14 +242,14 @@ namespace DOMAIN
         {
             for (int i = 0; i < projects.Count; i++)
             {
-                for(int j =0;i< projects[i].EmployeeListfromEmployeeManagement.Count;j++)
+                for (int j = 0; i < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
                 {
                     if (projects[i].EmployeeListfromEmployeeManagement[j].employeeID == eid)
                     {
                         projects[i].EmployeeListfromEmployeeManagement.Remove(ename);
                     }
                 }
-                
+
             }
         }
 
@@ -278,11 +281,11 @@ namespace DOMAIN
             return false;
         }
 
-        public Boolean IfExistInEmployee(int empid,int pid)
+        public Boolean IfExistInEmployee(int empid, int pid)
         {
             for (int i = 0; i < projects.Count; i++)
             {
-                if(pid == projects[i].id)
+                if (pid == projects[i].id)
                 {
                     for (int j = 0; j < projects[i].EmployeeListfromEmployeeManagement.Count; j++)
                     {
@@ -339,7 +342,7 @@ namespace DOMAIN
 
         }
     }
-    
+
     //Class which consists of methods for adding and viewing Employees 
     public class EmployeeManagement : IEntityOperationEmployee
     {
@@ -399,7 +402,7 @@ namespace DOMAIN
             }
         }
 
-        public Employee SearchingEmployeeInEmployeeList(List<Employee> list, int first,int last,int x)
+        public Employee SearchingEmployeeInEmployeeList(List<Employee> list, int first, int last, int x)
         {
             if (first <= last)
             {
@@ -425,7 +428,7 @@ namespace DOMAIN
             employeeList.Sort(sortEmployeeById);
             int first = 0;
             int last = employeeList.Count - 1;
-            Employee x = SearchingEmployeeInEmployeeList(employeeList,first,last,eid);
+            Employee x = SearchingEmployeeInEmployeeList(employeeList, first, last, eid);
             if (x != null)
             {
                 Console.WriteLine(" Employee Id - " + x.employeeID + "\n Employee first name - " + x.employeefirstName + "\n Employee last name - " + x.lastName + "\n Employee email id - " + x.email + "\n Employee mobile number - " + x.mobile + "\n Employee address - " + x.address + "\n Role Id - " + x.roleId + "\n Role Name - " + x.roleName);
@@ -464,7 +467,7 @@ namespace DOMAIN
 
         public Boolean IfExistsByRole(int roleId)
         {
-            for(int i =0;i< employeeList.Count; i++)
+            for (int i = 0; i < employeeList.Count; i++)
             {
                 if (employeeList[i].roleId == roleId)
                 {
@@ -503,18 +506,18 @@ namespace DOMAIN
         {
             if (first <= last)
             {
-                int midpoint = (first + last)/ 2;
+                int midpoint = (first + last) / 2;
                 if (roleList[midpoint].roleId == roleId)
                 {
                     return roleList[midpoint];
                 }
                 else if (roleList[midpoint].roleId < roleId)
                 {
-                    return SearchRole(roleList, midpoint+1, last, roleId);
+                    return SearchRole(roleList, midpoint + 1, last, roleId);
                 }
                 else if (roleList[midpoint].roleId > roleId)
                 {
-                    return SearchRole(roleList, first, midpoint-1, roleId);
+                    return SearchRole(roleList, first, midpoint - 1, roleId);
                 }
             }
             return null;
@@ -525,8 +528,8 @@ namespace DOMAIN
             roleList.Sort();
             int first = 0;
             int last = roleList.Count - 1;
-            Role roleSelect = SearchRole(roleList,first,last,roleId);
-            if(roleSelect != null)
+            Role roleSelect = SearchRole(roleList, first, last, roleId);
+            if (roleSelect != null)
             {
                 Console.WriteLine(" Name of the Role - " + roleSelect.roleName + "\n Role Id - " + roleSelect.roleId);
                 Console.WriteLine();
@@ -539,15 +542,15 @@ namespace DOMAIN
 
         public void DeleteRole(int roleId)
         {
-                for (int i = 0; i < roleList.Count; i++)
+            for (int i = 0; i < roleList.Count; i++)
+            {
+                if (roleList[i].roleId == roleId)
                 {
-                    if (roleList[i].roleId == roleId)
-                    {
-                        roleList.RemoveAt(i);
-                    }
+                    roleList.RemoveAt(i);
                 }
-            
-            
+            }
+
+
         }
 
         public Boolean IfExists(int roleId)
